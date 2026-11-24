@@ -1,0 +1,6 @@
+{
+  "name": "Hidden Beauty Salon",
+  "description": "Hidden Beauty Salon — Luxury beauty salon, bridal makeup, hairstyling, skincare, and makeover studio. Reveal Your Natural Beauty.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+:root {
+  --color-primary-rose: #C98991;
+  --color-blush-pink: #F7E9E8;
+  --color-light-cream: #FFF9F6;
+  --color-champagne-gold: #C5A16A;
+  --color-deep-burgundy: #762C3E;
+  --color-dark-text: #30272A;
+  --color-white: #FFFFFF;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 84px;
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, sans-serif;
+    color: var(--color-dark-text);
+    background-color: var(--color-light-cream);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  .font-serif-display {
+    font-family: "Playfair Display", Georgia, serif;
+  }
+
+  .font-script-luxury {
+    font-family: "Great Vibes", "Playfair Display", cursive;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-deep-burgundy);
+    outline-offset: 2px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Subtle luxury scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-light-cream);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(197, 161, 106, 0.45);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-deep-burgundy);
+}
